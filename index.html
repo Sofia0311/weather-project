@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Погода в Москве</title>
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header>
+  </header>
+
+<div class="video-wrapper">
+  <video id="bgVideo" autoplay muted loop playsinline></video>
+  <video id="bgVideoBack" autoplay muted loop playsinline></video>
+</div>
+
+<div class="wrapper">
+    <div class="theme-switcher">
+    <input type="checkbox" id="checkbox" />
+    <label for="checkbox">
+    </label> 
+</div>
+
+  <!-- Форма входа -->
+  <form id="loginForm">
+    <h2>Погода в Москве</h2>
+    <h3>Вход</h3>
+    <div class="input-box">
+      <input type="email" id="loginEmail" placeholder="Email" required />
+    </div>
+    <div class="input-box">
+      <input type="password" id="loginPassword" placeholder="Пароль" required />
+    </div>
+    <div class="storage">
+      <label><input type="checkbox" id="rememberMe" /> Запомнить меня</label>
+    </div>
+    <button type="submit" class="btn">Войти</button>
+    <div class="required-link">
+      <p>Нет аккаунта? <a href="#" id="showRegister">Создать</a></p>
+    </div>
+  </form>
+
+  <!-- Форма регистрации -->
+  <form id="registerForm" style="display:none;">
+    <h3>Регистрация</h3>
+    <div class="input-box">
+      <input type="email" id="registerEmail" placeholder="Email" required />
+    </div>
+    <div class="input-box">
+      <input type="password" id="registerPassword" placeholder="Пароль" required />
+    </div>
+    <button type="submit" class="btn">Создать</button>
+    <p>Есть аккаунт? <a href="#" id="showLogin">Войти</a></p>
+  </form>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

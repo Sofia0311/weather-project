@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body, html {
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background-repeat: no-repeat;
+}
+#bgVideo {
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    left: 10%;
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 70%;
+    z-index: -1;
+}
+#bgVideoBack {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 70%;
+    z-index: -2;
+}
+.video-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -2;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.wrapper {
+    width: 60vh;
+    height: 55vh;
+    padding: 15px;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, #fff, transparent);
+    text-align: center;
+    word-spacing: 6px; 
+    color: #111110;
+    object-position: center;
+}
+.input-box {
+    padding: 5px;
+}
+button[type="submit"] {
+    height: 6vh;
+    width: 35vh;
+    color: rgb(255, 255, 255);
+    background-color: rgba(45, 95, 21, 0.658);
+    margin-top: 3vh;
+    font-size: larger;
+    letter-spacing: 3px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.required-link {
+    color:black;
+}
+.theme-switcher {
+    position: relative;
+    top: 0;
+    left: 0;
+    font-size: smaller;
+}
+.theme-switcher input[type="checkbox"] {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+.theme-switcher label {
+    display: block;
+    cursor: pointer;
+    width: 60px;
+    height: 37px;
+    background: rgb(150, 147, 147);
+    border-radius: 40px;
+    position: relative;
+}
+.theme-switcher label::before {
+    position: absolute;
+    display: block;
+    content: "";
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+    background: #ffffff;
+    top: 3px;
+    left: 3px;
+    transition: all ease 0.3s;
+}
+.theme-switcher input:checked + label {
+    background: rgb(51, 51, 51);
+}
+.theme-switcher input:checked + label:before {
+    left: 26.5px;
+}
+span [class="checkbox"] {
+    position: absolute;
+    margin-right: 5px;
+}
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url('ph1.jpg');
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    width: 100vh;
+    height: 50vh;
+    padding: 20px;
+    background: linear-gradient(to bottom, #c7bceb, transparent);
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    border-radius: 20px;
+}
+
+#wind {
+    text-align: left;
+    font-size: larger;
+} 
+#temp {
+    padding-bottom: 10px;
+    font-size: x-large;
+    text-align: left;
+    font-style: bolder;
+}
+#description {
+    text-align: left;
+    font-size: larger;
+}
+
